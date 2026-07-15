@@ -13,6 +13,7 @@
   <meta property="og:description" content="Prince Frederick Senior: affordable one-bedroom homes in Prince Frederick, MD, for residents 62+ or adults with disabilities. On-site laundry." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://princefrederickseniorapts.com/" />
+  <meta property="og:image" content="https://princefrederickseniorapts.com/assets/img/hero.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="preload" href="/assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/assets/fonts/poppins-latin-700.woff2" as="font" type="font/woff2" crossorigin />
@@ -27,6 +28,7 @@
     "telephone": "(410) 535-5816",
     "faxNumber": "(410) 535-4535",
     "email": "princefrederick@fifthmanagement.com",
+    "image": "https://princefrederickseniorapts.com/assets/img/hero.jpg",
     "numberOfAccommodationUnits": "30",
     "petsAllowed": true,
     "address": {
@@ -92,7 +94,14 @@
               <li><a href="/eligibility/">Eligibility</a></li>
             </ul>
           </li>
-          <li><a href="/floor-plans/">Floor Plans</a></li>
+          <li class="nav-group">
+            <button type="button" class="nav-group-btn" aria-expanded="false" aria-controls="nav-group-photos" data-nav-group>Photos &amp; Floor Plans <svg class="chev" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path d="M3.5 6l4.5 4.5L12.5 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <span class="nav-group-label">Photos &amp; Floor Plans</span>
+            <ul class="nav-dropdown" id="nav-group-photos">
+              <li><a href="/photos/">Photos</a></li>
+              <li><a href="/floor-plans/">Floor Plans</a></li>
+            </ul>
+          </li>
           <li><a href="/contact/">Contact</a></li>
           <li class="nav-cta nav-cta-phone"><a class="btn btn-call" href="tel:+14105355816"><svg class="phone-ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6.8 10.8a15.5 15.5 0 0 0 6.4 6.4l2.1-2.1a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.6a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1Z"/></svg>Call (410) 535-5816</a></li>
           <li class="nav-cta"><a class="btn btn-residents" href="https://fifthmanagement.securecafe.com/residentservices/apartmentsforrent/userlogin.aspx" target="_blank" rel="noopener noreferrer">Residents<span class="ext-mark" aria-hidden="true">&#8599;</span><span class="visually-hidden"> (opens the resident portal in a new tab)</span></a></li>
@@ -108,7 +117,8 @@
   </header>
   <main id="main">
     <section class="hero" id="top">
-
+      <img class="hero-image" src="/assets/img/hero.jpg" alt="Prince Frederick Senior Apartments — community view in Prince Frederick, MD" width="1600" height="1067" fetchpriority="high" />
+      <div class="hero-scrim" aria-hidden="true"></div>
       <div class="hero-content">
         <div class="container">
           <p class="hero-eyebrow">Affordable senior apartments (62+) in Prince Frederick, MD</p>
@@ -179,12 +189,42 @@
 
     <section class="section section-units alt">
       <div class="container">
-        <div class="media-row"><div class="media-row-body"><p class="section-eyebrow"><span class="eyebrow-chip">Homes &amp; floor plans</span></p>
+        <div class="media-row">
+          <figure class="media-row-photo">
+            <img src="/assets/img/kitchen.jpg" alt="A renovated kitchen at Prince Frederick Senior with dark shaker cabinets, a white refrigerator and electric range, granite-look countertops, and wood-look plank flooring" width="1025" height="703" loading="lazy" />
+          </figure>
+          <div class="media-row-body">
+            <p class="section-eyebrow"><span class="eyebrow-chip">Homes &amp; floor plans</span></p>
             <h2>Find the right home for you</h2>
             <p>Prince Frederick Senior Apartments has 30 senior apartments in a range of sizes. Because these are affordable homes, rent depends on the program and your household. Call our office for current rent and availability.</p>
             <div class="cta-row">
               <a class="btn btn-secondary" href="/floor-plans/">View floor plans</a>
-            </div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-look" aria-label="Photos of Prince Frederick Senior Apartments">
+      <div class="container">
+        <header class="section-head">
+        <p class="section-eyebrow"><span class="eyebrow-chip">Around the community</span></p>
+        <h2 class="section-title">Take a look around</h2>
+      </header>
+        <div class="home-photo-band">
+          <figure class="home-photo">
+            <img src="/assets/img/hero.jpg" alt="A single-story Prince Frederick Senior apartment building with gray siding, a red front door, and trimmed shrubs along a green lawn under a clear blue sky" width="1600" height="1067" loading="lazy" />
+          </figure>
+          <figure class="home-photo">
+            <img src="/assets/img/kitchen.jpg" alt="A renovated kitchen at Prince Frederick Senior with dark shaker cabinets, a white refrigerator and electric range, granite-look countertops, and wood-look plank flooring" width="1025" height="703" loading="lazy" />
+          </figure>
+          <figure class="home-photo">
+            <img src="/assets/img/sign.jpg" alt="The Prince Frederick Senior entrance sign, a brick monument sign reading Prince Frederick Senior with fair-housing and accessibility symbols, framed by shrubs and flowers" width="1200" height="900" loading="lazy" />
+          </figure>
+        </div>
+        <div class="cta-row cta-center">
+          <a class="btn btn-secondary" href="/photos/">See all 6 photos <span aria-hidden="true">&rarr;</span></a>
+        </div>
       </div>
     </section>
 
